@@ -30,7 +30,9 @@ const Header: React.FC<{}> = () => {
           <Text>Search</Text>
           <Text>Avatar</Text>
         </Flex>
-      </Box>
+      </Box>¨
+
+      
 
       {/* <Box flexDirection="row">
         <Tab.Navigator>
@@ -43,21 +45,7 @@ const Header: React.FC<{}> = () => {
 };
 
 
-function HomeScreen() {
-    
-    return(
-        <Box flex={1} bg="#000" alignItems="center" justifyContent="center">
-          Home
-        </Box>
-    )
-}
-
-function SettingsScreen() {
-    
-    return(
-        <Text>SettingsScreen</Text>
-    )
-}
+ 
 
 
 export default Header;

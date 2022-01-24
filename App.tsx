@@ -10,33 +10,12 @@ export default function App() {
   const Tab = createMaterialTopTabNavigator();
 
   return (
-    <NavigationContainer>
-      <NativeBaseProvider>
-        <Header />
+    <NativeBaseProvider>
+      <Header />
 
-        <Box flexDirection="row">
-          <Tab.Navigator>
-            <Tab.Screen name="Home" component={HomeScreen} />
-            <Tab.Screen name="Settings" component={SettingsScreen} />
-          </Tab.Navigator>
-        </Box>
-        {/* <Box  bg="#000" alignItems="center" justifyContent="center">
+      {/* <Box  bg="#000" alignItems="center" justifyContent="center">
           Hello world
         </Box> */}
-      </NativeBaseProvider>
-    </NavigationContainer>
+    </NativeBaseProvider>
   );
-}
-
-function HomeScreen() {
-  return (
-    <Box bg="#000" alignItems="center" justifyContent="center">
-     <Text> Home
-       </Text> 
-    </Box>
-  );
-}
-
-function SettingsScreen() {
-  return <Text>SettingsScreen</Text>;
 }
